@@ -41,7 +41,7 @@ const discount3 = document.createElement('button');
 discount3.id = "discount3";
 discount3.textContent = "50% OFF Axe body soap!";
 const block3 = document.getElementsByClassName('block3');
-block3[3].appendChild(discount3);
+block3[0].appendChild(discount3);
 
 
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
@@ -166,10 +166,12 @@ const torturePrice = document.createElement('div');
 torturePrice.className = "price";
 torturePrice.textContent = "$49.99";
 const tortureDiscount = document.createElement('button');
-discount3.textContent = "Free bottle of Chloroform with purchase!";
-block3[3].insertBefore(torturePrice, block3[3].childNodes[2]);
-block3[3].insertBefore(tortureItem, block3[3].childNodes[2]);
-block3[3].insertBefore(tortureBrand, block3[3].childNodes[2]);
+tortureDiscount.className = "discount";
+tortureDiscount.textContent = "Free bottle of Chloroform with purchase!";
+block3[3].appendChild(tortureBrand);
+block3[3].appendChild(tortureItem);
+block3[3].appendChild(torturePrice);
+block3[3].appendChild(tortureDiscount);
 
 
 
